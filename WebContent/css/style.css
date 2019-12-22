@@ -1,0 +1,311 @@
+/* common */
+* { margin: 0; padding: 0; box-sizing: border-box; 
+	font-family: "Google Sans", "Roboto", sans-serif; }
+
+label {
+	display: inline-block;
+	width: 100px;
+	margin: 5px;
+	font-size: 0.9em;
+}
+
+/* common input and button */
+
+input {
+	width: 200px;
+	margin: 5px;
+	padding: 10px;
+	height: 30px;
+	border: 2px solid lightgray;
+	
+}
+input:hover {
+	border: 2px solid rgb(51, 103, 214);
+	box-sizing: border-box;
+	box-shadow: 2px 2px 4px #4776c251103214;
+}
+
+
+input[type="submit"] {
+	height: 35px;
+	border-radius: 2px;
+	background-color: rgb(51, 103, 214);
+	border: 0px;
+	width: 120px;
+	color: white;	
+}
+
+input[type="button"], button {
+	height: 35px;
+	border-radius: 2px;
+	background-color: rgb(51, 103, 214);
+	border: 0px;
+	width: 120px;
+	color: white;
+	
+}
+
+input[type="button"]:hover {
+	 border: 2px solid;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width: 15px; height: 15px; margin: 3px;
+}
+
+.genderClass {
+	font-size: 0.9em;
+}
+
+select {
+	width: 60px;
+}
+
+#historyBtn {
+	width: 150px;
+	margin-left: 30px; 
+	margin-right: 40px;
+}
+
+.cancel, #createBtn1  {
+	width: 65px;
+	height: 35px;
+	margin-left: 80px;
+	margin-top: 20px;
+}
+
+#cancel {
+	width: 65px;
+	height: 35px;
+	margin-left: 20px;
+}
+
+input[class="cancleBtn"] {
+	width: 63px;
+	height: 28px;
+	padding: 2px;
+}
+
+#dupCheck {
+	width: 70px;
+	height: 30px;
+	margin-left: 10px;	
+}
+
+#createBtn {
+	display: inline-block;
+	width: 65px;
+	height: 30px;
+	margin-left: 20px;
+	padding: 2px;
+}
+
+input[type="button"]:hover {
+	border: 0px;
+}
+
+/* input and button css end */
+
+ul {
+	list-style: none;
+	/* padding: 20px; */
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	margin: 30px 60px;
+}
+
+h3 {
+	margin: 20px 20px;
+	color: #00a400;
+}
+
+.gridContainer {
+	display: grid;
+	grid-template-columns: 200px auto;
+}
+
+.btn { height: 40px; width: 140px; border-radius: 10px; margin-left: 30px; }
+
+table, tr, td { border: 2px solid lightgray; padding: 10px;
+  				min-height:100px; min-width: 120px;}
+table {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 20px;
+  width: 500px;
+  font-size: 0.9em; 
+}
+
+
+
+#required { color:red; display: inline-block; }
+
+
+/* Medical Report */
+#medicalBox {
+	background-color: #fff;
+	/* display: grid; */
+}
+#medicalBox>div { 
+	padding: 20px; 
+	border: 1px solid gray;
+	margin: 40px;
+	border-radius: 20px;
+	}
+
+/* historyPage */
+#historyBox {
+	background-color: #fff;
+
+}
+
+/* Create profile */
+.createProfileBox {
+	background-color: #fff;
+	margin: 50px;
+}
+
+
+/* appointment page / user profile */
+.bigBox {
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	opacity: 0.5;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+
+.visiable { 
+	display: block;
+}
+
+.registeredBox {
+	color: red;
+}
+
+#createBox {
+	position: absolute;
+	padding: 5px 20px 30px 30px;
+	/* padding-top: 5px; */
+	left: 37%;
+	top: 20%;
+	width: 400px;
+	background-color: #fff;
+	z-index: 100;
+	border-radius: 10px;
+	display: none;
+}
+
+#createBox>h2 {
+	text-align: center;
+}
+
+#profileBox {
+	background-color: #fff;
+	display: grid;
+	grid-template-areas: "h2 h2"
+						"nonEditable editable"
+						"divBth divBth";
+}
+.h2 { grid-area: h2; }
+.nonEditable { grid-area: nonEditable; padding: 20px;}
+.editable { grid-area: editable; padding: 20px;}
+.div { grid-area: divBth; }
+
+#appointBox {
+	background-color: #fff;
+}
+
+
+#editBox {
+	padding: 20px;
+	padding-top: 5px;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 400px;
+	background-color: #fff;
+}
+
+.todayList {
+	margin-left: 20px;
+}
+
+/* header */
+#headerBox {
+	height: 120px;
+	background-color: rgb(51, 103, 214);
+	padding: 40px;
+	display: flex;
+	box-shadow: 2px 2px 2px gray;
+}
+
+#logo {
+	width: 200px;
+	height: 48px;
+}
+
+.headerUser {
+	position: absolute;
+	hight: 50px;
+	right: 100px;
+	top: 50px;
+	font-size: 1.2rem;
+}
+
+.inputName {
+	background-color: #2850a7;
+	color: white;
+	border: 0px;
+	height: 30px;
+	width: 190px;
+	font-size: 0.9em;
+}
+.inputName:hover {
+	border: 0px;
+	box-shadow: 0;
+}
+
+
+/* left menu */
+.leftMenu {
+	font-family: "arial";
+	width: 200px;
+	background-color: #fff;
+}
+
+.leftMenu>li {
+	padding: 23px 40px;
+}
+
+.leftMenu>li:hover {
+  background-color: #c0c0c0;
+  color: white;
+}
+
+
+/* loginPage */
+#formBox {
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 370px;
+	height: 330px;
+	padding: 40px 68px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px;
+}
+
+.body {
+	background-color: rgb(51, 103, 214);
+}
+
+.logbtn1 { margin-left: 50px; } */
+
+
