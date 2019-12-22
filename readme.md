@@ -7,7 +7,7 @@
 
 ![createProfile](images/2.createProfile.jpg)
 
-## 3. appoint create
+## 3. create reservation
 
 ![appointCreate](images/3.appointCreate.jpg)
 
